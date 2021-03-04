@@ -132,7 +132,7 @@ class _HomePageState extends State<HomePage> {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            gifPage(snapshot.data["data"]["index"])));
+                            GifPage(snapshot.data["data"][index])));
               },
               onLongPress: () {
                 Share.share(snapshot.data["data"][index]["images"]
